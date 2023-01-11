@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML 5 Boilerplate</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <a href="" class="stomb-logo">
+                <img src="./images/stomb-logo.png" alt="STOMB OFFICIAL">
+            </a>
+    
+            <ul class="main-nav">
+                <li><a href="#" onClick="javascript: openNavTarget('shows');">SHOWS</a></li>
+                <li><a href="#" onClick="javascript: openNavTarget('music');">MUSIC</a></li>
+                <li><a href="#" onClick="javascript: openNavTarget('video');">VIDEO</a></li>
+                <li><a href="#" onClick="javascript: openNavTarget('merch');">MERCH</a></li>
+                <li><a href="#" onClick="javascript: openNavTarget('press');">PRESS</a></li>
+                <li><a href="#" onClick="javascript: openNavTarget('contact');">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="art-container">
+                <img src="./images/purple-geometrics.svg" alt="" class="purple-geometrics">
+                <img src="./images/green-circles-geometric.svg" alt="" class="green-circles-geometric">
+                <img src="./images/blue-outside-circle.svg" alt="" class="blue-outside-circle anim-rotating">
+                <img src="./images/blue-dotted-background.svg" alt="" class="blue-dotted-background.svg">
+                <img src="./images/red-inner-geometrics.svg" alt="" class="red-inner-geometrics">
+                <img src="./images/inner-circles-silhouettes.svg" alt="" class="inner-circles-silhouettes anim-silhouette-inner-blink">
+                <img src="./images/outer-circles-silhouettes.svg" alt="" class="outer-circles-silhouettes anim-silhouette-outer-blink">
+                <img src="./images/yellow-silhouettes.svg" alt="" class="yellow-silhouettes">
+                <div class="eyes">
+                    <div class="eye-1">
+                        <div class="eye-container">
+                            <div class="eyes-pupil"></div>
+                        </div>
+                    </div>
+                    <div class="eye-2">
+                        <div class="eye-container">
+                            <div class="eyes-pupil"></div>
+                        </div>
+                    </div>
+                    <div class="eye-3">
+                        <div class="eye-container">
+                            <div class="eyes-pupil"></div>
+                        </div>
+                    </div>
+                    <div class="eye-4">
+                        <div class="eye-container">
+                            <div class="eyes-pupil"></div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/shrooms-back.svg" alt="" class="shrooms-back">
+                <img src="./images/skull.svg" alt="" class="skull">
+                <img src="./images/crystals.svg" alt="" class="crystals">
+                <img src="./images/crystals-reflection.svg" alt="" class="crystals-reflection anim-reflection">
+                <img src="./images/shrooms-front.svg" alt="" class="shrooms-front">
+                <img src="./images/heart.svg" alt="" class="heart anim-heartbeat">
+                <div class="moths">
+                    <div class="left-moth">
+                        <div class="left-moth-container">
+                            <div class="left-moth-wing-container">
+                                <img src="./images/left-moth-wing.svg" alt="">
+                                <!-- <img src="./images/left-moth-wing.svg" alt="" class="anim-flipleftwing"> -->
+                            </div>
+                            <div class="right-moth-wing-container">
+                                <img src="./images/right-moth-wing.svg" alt="">
+                                <!-- <img src="./images/right-moth-wing.svg" alt="" class="anim-flipleftwing"> -->
+                            </div>
+                            <img src="./images/moth-body.svg" alt="" class="moth-body">
+                        </div>
+                    </div>
+                    <div class="right-moth">
+                        <div class="right-moth-container">
+                            <div class="left-moth-wing-container">
+                                <img src="./images/left-moth-wing.svg" alt="">
+                                <!-- <img src="./images/left-moth-wing.svg" alt="" class="anim-flipleftwing"> -->
+                            </div>
+                            <div class="right-moth-wing-container">
+                                <img src="./images/right-moth-wing.svg" alt="">
+                                <!-- <img src="./images/right-moth-wing.svg" alt="" class="anim-flipleftwing"> -->
+                            </div>
+                            <img src="./images/moth-body.svg" alt="" class="moth-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="album-release">
+                <h3>NEW ALBUM AVAILABLE</h3>
+                <h2>MASSIVE DISTURBED META ART</h2>
+                <button>
+                    <span>Listen on
+                        <img src="./images/spotify-logo.png" alt="Listen on Spotify">
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 70">
+                        <polygon points="290 70 10 70 0 60 0 10 10 0 290 0 300 10 300 60 290 70"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <main>
+            <section class="shows" data-sectiontarget="shows">
+                <div class="shows-container">
+                    <h2>UPCOMING SHOWS</h2>
+                    <div class="shows-year">
+                        <h3>2023</h3>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Longer name of the event, way longer just for testing purposes
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+
+                    <div class="shows-year">
+                        <h3>2022</h3>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="show-date">
+                            <p class="show-day">06</p>
+                            <p class="show-month">JAN</p>
+                        </div>
+                        <div class="show-infos">
+                            <h4>
+                                Name of the event
+                            </h4>
+                            <h5>
+                                Venue Information
+                            </h5>
+                        </div>
+                        <div class="show-tickets">
+                            <a href="#">Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="music" data-sectiontarget="music">
+                <div class="line-left"></div>
+                <div class="album-years">
+                    <div class="album-year">
+                        <div class="album-year-content">
+                            <h4>2023</h4>
+                            <h5>Massive disturbed meta art</h5>
+                        </div>
+                    </div>
+                    <div class="album-year">
+                        <div class="album-year-content">
+                            <h4>2020</h4>
+                            <h5>From Nihil</h5>
+                        </div>
+                    </div>
+                    <div class="album-year">
+                        <div class="album-year-content">
+                            <h4>2017</h4>
+                            <h5>EP Duality</h5>
+                        </div>
+                    </div>
+                    <div class="album-year">
+                        <div class="album-year-content">
+                            <h4>2015</h4>
+                            <h5>The Grey</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

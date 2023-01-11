@@ -1,0 +1,693 @@
+:root{
+    --color-black: #000000;
+    --color-acidgreen: #6ed34a;
+    --color-purple: #7c4182;
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 300;
+    src: local("CormorantGaramond-Light.ttf"),
+        url("./fonts/CormorantGaramond-Light.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 400;
+    src: local("CormorantGaramond-Regular.ttf"),
+        url("./fonts/CormorantGaramond-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 500;
+    src: local("CormorantGaramond-Medium.ttf"),
+        url("./fonts/CormorantGaramond-Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 600;
+    src: local("CormorantGaramond-SemiBold.ttf"),
+        url("./fonts/CormorantGaramond-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "CormorantGaramond";
+    font-weight: 700;
+    src: local("CormorantGaramond-Bold.ttf"),
+        url("./fonts/CormorantGaramond-Bold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Mada";
+    font-weight: 200;
+    src: local("Mada-ExtraLight.ttf"),
+        url("./fonts/Mada-ExtraLight.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Mada";
+    font-weight: 300;
+    src: local("Mada-Light.ttf"),
+        url("./fonts/Mada-Light.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Mada";
+    font-weight: 400;
+    src: local("Mada-Regular.ttf"),
+        url("./fonts/Mada-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Mada";
+    font-weight: 500;
+    src: local("Mada-Medium.ttf"),
+        url("./fonts/Mada-Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Mada";
+    font-weight: 600;
+    src: local("Mada-SemiBold.ttf"),
+        url("./fonts/Mada-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Mada";
+    font-weight: 700;
+    src: local("Mada-Bold.ttf"),
+        url("./fonts/Mada-Bold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Mada";
+    font-weight: 900;
+    src: local("Mada-Black.ttf"),
+        url("./fonts/Mada-Black.ttf") format("truetype")
+}
+
+.sectionShow{
+    display: block;
+}
+
+body{
+    background: var(--color-black);
+    position: relative;
+    font-family: "Mada";
+}
+
+h2{
+    color: white;
+    font-family: "CormorantGaramond";
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+
+h3{
+    color: white;
+    font-family: "Mada";
+    font-weight: 400;
+    font-size: 1.175rem;
+    padding: .5rem 0;
+    line-height: 1;
+    color: var(--color-acidgreen);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    background: black;
+}
+
+.stomb-logo{
+    padding: 0 2rem;
+}
+
+.main-nav{
+    position: relative;
+    z-index: 1;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    gap: 2rem;
+}
+
+.main-nav li{
+    position: relative;
+}
+
+.main-nav li a{
+    position: relative;
+    z-index: 1;
+    font-family: "CormorantGaramond";
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 6px;
+}
+
+.main-nav li:hover a:before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    background: url("./images/nav-hover.svg") no-repeat;
+    width: 60px;
+    height: 60px;
+    animation: anim-navHover linear infinite;
+    animation-duration: 5s;
+    opacity: .5;
+}
+
+.album-release{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0 26px 0;
+}
+
+.album-release button{
+    cursor: pointer;
+    margin: 20px 0;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
+.album-release button:hover svg{
+    fill: var(--color-acidgreen);
+    transition: all .5s;
+}
+
+.album-release button:hover span{
+    color: black;
+    transition: all .5s;
+}
+
+.album-release button:before{
+    content: "";
+    background: url("./images/button-tl.svg") no-repeat;
+    position: absolute;
+    width: 26px;
+    aspect-ratio: 1;
+    top: -19px;
+    left: 34px;
+}
+
+.album-release button:after{
+    content: "";
+    background: url("./images/button-br.svg") no-repeat;
+    position: absolute;
+    width: 16px;
+    aspect-ratio: 1;
+    bottom: -9px;
+    right: 33px;
+}
+
+.album-release button span{
+    color: var(--color-acidgreen);
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.album-release button svg{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    stroke: var(--color-acidgreen);
+    stroke-width: 2px;
+}
+
+section{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    padding: 86px 0;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.shows-container{
+    width: 768px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.shows-container h2{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.shows-year{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shows-year h3{
+    color: var(--color-purple);
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.shows-year img{
+    height: 50px;
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.show-date p{
+    color: white;
+}
+
+.show-day{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.show-month{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.show-infos h4{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--color-acidgreen);
+    text-transform: uppercase;
+}
+
+.show-infos h5{
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+}
+
+.show-tickets{
+    margin-left: auto;
+}
+
+.show-tickets a{
+    display: block;
+    background: #6fd34a35;
+    border: 1px solid var(--color-acidgreen);
+    color: var(--color-acidgreen);
+    padding: 1rem;
+    transition: all .5s ease-in;
+}
+
+.show-tickets a:hover{
+    background: #6fd34a;
+    color: black;
+    transition: all .5s ease-in;
+}
+
+.music{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10rem 6rem 0 6rem;
+}
+
+.line-left{
+    border-right: 1px solid var(--color-purple);
+    height: 100%;
+    width: 1px;
+}
+
+.album-years{
+    display: flex;
+    flex-direction: column;
+}
+
+.album-year-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.album-year-content:before{
+    content: "";
+    width: 16px;
+    height: 1px;
+    background: var(--color-purple);
+}
+
+.album-year-content h4{
+    color: var(--color-purple);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.album-year-content h5{
+    color: var(--color-acidgreen);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* HERO ANIMATION */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.art-container{
+    position: relative;
+    width: 728px;
+    aspect-ratio: 1;
+    margin: 2rem auto 0 auto;
+}
+
+.art-container *{
+    display: block;
+    position: absolute;
+}
+
+.purple-geometrics,
+.green-circles-geometric{
+    width: 89%;
+    top: 40px;
+    left: 40px;
+}
+
+.red-inner-geometrics{
+    width: 64%;
+    top: 130px;
+    left: 130px;
+}
+
+.yellow-silhouettes{
+    width: 68%;
+    top: 188px;
+    left: 116px;
+}
+
+.inner-circles-silhouettes{
+    width: 69%;
+    top: 184px;
+    left: 112px;
+}
+
+.outer-circles-silhouettes{
+    width: 70%;
+    top: 180px;
+    left: 108px;
+}
+
+.eyes{
+    width: 70%;
+    top: 108px;
+    left: 108px;
+}
+
+.eye-container{
+    overflow: hidden;
+    background: url("./images/eye-globe.svg") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 62px;
+    aspect-ratio: 1;
+    top: -15px;
+    left: -15px;
+}
+
+.eyes-pupil{
+    background: url("./images/eyes-pupil.svg") no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    aspect-ratio: 1;
+    transform: translate(50%, 50%);
+}
+
+.eye-1{
+    top: 146px;
+    left: 13px;
+}
+
+.eye-2{
+    top: 13px;
+    left: 146px;
+}
+
+.eye-3{
+    top: 13px;
+    left: 333px;
+}
+
+.eye-4{
+    top: 146px;
+    left: 466px;
+}
+
+.shrooms-back{
+    width: 60%;
+    top: 228px;
+    left: 146px;
+}
+
+.skull{
+    width: 30%;
+    left: 254px;
+    top: 220px;
+}
+
+.crystals{
+    width: 25%;
+    top: 118px;
+    left: 272px;
+}
+
+.crystals-reflection{
+    width: 25%;
+    top: 118px;
+    left: 272px;
+    mix-blend-mode: overlay;
+    transform-origin: center center;
+}
+
+.shrooms-front{
+    width: 53%;
+    top: 254px;
+    left: 171px;
+}
+
+.heart{
+    width: 19%;
+    top: 540px;
+    left: 298px;
+}
+
+.moths{
+    position: relative;
+    width: 100%;
+}
+
+.left-moth{
+    width: 50%;
+    left: 0;
+}
+
+.right-moth{
+    width: 50%;
+    right: 0;
+}
+
+.left-moth-container{
+    width: 100%;
+    top: 640px;
+    left: 112px;
+    transform: rotate(45deg);
+}
+
+.left-moth .moth-body{
+    transform: rotate(45deg);
+    width: 20%;
+}
+
+.left-moth .left-moth-wing-container,
+.right-moth .left-moth-wing-container{
+    transform: rotate(46deg);
+    width: 44%;
+    top: -8px;
+    left: -75px;
+}
+
+.left-moth .right-moth-wing-container,
+.right-moth .right-moth-wing-container{
+    transform: rotate(41deg);
+    width: 26%;
+    top: -41px;
+    left: 108px;
+}
+
+.right-moth-container{
+    width: 100%;
+    top: 432px;
+    right: -91px;
+    transform: rotate(-45deg);
+}
+
+.right-moth .moth-body{
+    transform: rotate(45deg);
+    width: 20%;
+}
+
+.left-moth-wing-container img{
+    transform-origin: center right;
+}
+
+.right-moth-wing-container img{
+    transform-origin: -15px 150px;
+}
+
+
+/* ANIMS */
+
+@keyframes anim-navHover {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anim-rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.anim-rotating {
+    animation: anim-rotating 120s linear infinite;
+}
+
+@keyframes anim-silhouette-inner-blink {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.anim-silhouette-inner-blink {
+    animation: anim-silhouette-inner-blink 1s ease-in infinite;
+}
+
+@keyframes anim-silhouette-outer-blink {
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.anim-silhouette-outer-blink {
+    animation: anim-silhouette-outer-blink 1s ease-in infinite;
+}
+
+@keyframes anim-reflection {
+    0% {
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.anim-reflection {
+    animation: anim-reflection 1s ease-in infinite;
+}
+
+@keyframes anim-heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    3%{
+        transform: scale(1.02);
+    }
+    6%{
+        transform: scale(1);
+    }
+    9%{
+        transform: scale(1.02);
+    }
+    12% {
+        transform: scale(1);
+    }
+}
+
+.anim-heartbeat {
+    animation: anim-heartbeat 5s ease-in infinite;
+}
+
+@keyframes anim-flipleftwing {
+    0% {
+        transform: skew(0deg, 0deg)
+                    ;
+    }
+    80% {
+        transform: skew(0deg, 0deg)
+                    ;
+    }
+    90%{
+        transform: skew(3deg, 3deg)
+                    ;
+    }
+    95%{
+        transform: skew(0deg, 0deg)
+                    ;
+    }
+}
+
+.anim-flipleftwing {
+    animation: anim-flipleftwing 5s ease-in infinite;
+}

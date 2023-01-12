@@ -89,7 +89,7 @@
 }
 
 .sectionShow{
-    display: block;
+    display: flex;
 }
 
 body{
@@ -122,10 +122,13 @@ h3{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 nav{
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 3;
     display: flex;
     align-items: center;
@@ -341,46 +344,80 @@ section{
 .music{
     width: 100%;
     height: 100%;
-    display: flex;
     padding: 10rem 6rem 0 6rem;
+    justify-content: center;
 }
 
 .line-left{
+    position: fixed;
     border-right: 1px solid var(--color-purple);
     height: 100%;
     width: 1px;
+    top: 0;
+    left: 50%;
 }
 
-.album-years{
+.albums{
     display: flex;
     flex-direction: column;
 }
 
-.album-year-content{
+.album{
+    display: flex;
+    width: 768px;
+    margin: 3rem 0;
+}
+
+.album-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.album-year{
     position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 2rem 0 0;
 }
 
-.album-year-content:before{
-    content: "";
-    width: 16px;
-    height: 1px;
-    background: var(--color-purple);
-}
-
-.album-year-content h4{
+.album-year h4{
     color: var(--color-purple);
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 200;
+    text-align: right;
 }
 
-.album-year-content h5{
+.album-year h5{
     color: var(--color-acidgreen);
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.725rem;
+    font-weight: 600;
+    text-align: right;
 }
 
+.album-playlist{
+    width: 50%;
+    padding: 0 0 0 2rem;
+}
+
+.album-playlist p{
+    font-weight: 300;
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.album-playlist .album-credits{
+    font-size: .875rem;
+}
+
+.album-playlist .album-credits a{
+    color: var(--color-acidgreen);
+}
+
+.album-playlist .album-credits a:hover{
+    color: var(--color-purple);
+}
 
 /* ---------------------------------------- */
 /* ---------------------------------------- */
@@ -402,30 +439,35 @@ section{
 
 .purple-geometrics,
 .green-circles-geometric{
+    opacity: 0;
     width: 89%;
     top: 40px;
     left: 40px;
 }
 
 .red-inner-geometrics{
+    opacity: 0;
     width: 64%;
     top: 130px;
     left: 130px;
 }
 
 .yellow-silhouettes{
+    opacity: 0;
     width: 68%;
     top: 188px;
     left: 116px;
 }
 
 .inner-circles-silhouettes{
+    opacity: 0;
     width: 69%;
     top: 184px;
     left: 112px;
 }
 
 .outer-circles-silhouettes{
+    opacity: 0;
     width: 70%;
     top: 180px;
     left: 108px;
@@ -477,24 +519,28 @@ section{
 }
 
 .shrooms-back{
+    opacity: 0;
     width: 60%;
     top: 228px;
     left: 146px;
 }
 
 .skull{
+    opacity: 0;
     width: 30%;
     left: 254px;
     top: 220px;
 }
 
 .crystals{
+    opacity: 0;
     width: 25%;
     top: 118px;
     left: 272px;
 }
 
 .crystals-reflection{
+    opacity: 0;
     width: 25%;
     top: 118px;
     left: 272px;
@@ -503,18 +549,21 @@ section{
 }
 
 .shrooms-front{
+    opacity: 0;
     width: 53%;
     top: 254px;
     left: 171px;
 }
 
 .heart{
+    opacity: 1;
     width: 19%;
     top: 540px;
     left: 298px;
 }
 
 .moths{
+    opacity: 0;
     position: relative;
     width: 100%;
 }
@@ -577,9 +626,11 @@ section{
     transform-origin: -15px 150px;
 }
 
-
+/* ---------------------------- */
 /* ANIMS */
+/* ---------------------------- */
 
+/* NAV HOVER */
 @keyframes anim-navHover {
     from {
         transform: rotate(0deg);
@@ -589,6 +640,112 @@ section{
     }
 }
 
+/* ART APPARITION */
+@keyframes anim-apparition {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0px);
+    }
+}
+
+.anim-apparition-1 {
+    animation: anim-apparition .8s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.anim-apparition-2 {
+    animation: anim-apparition .8s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+
+.anim-apparition-3 {
+    animation: anim-apparition .8s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+
+.anim-apparition-4 {
+    animation: anim-apparition .8s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .4s;
+}
+
+.anim-apparition-5 {
+    animation: anim-apparition .8s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+.anim-apparition-6 {
+    animation: anim-apparition .8s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .6s;
+}
+
+.anim-apparition-7 {
+    animation: anim-apparition .8s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .7s;
+}
+
+@keyframes anim-apparition-heart {
+    0% {
+        opacity: 0;
+        top: 500px;
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        top: 540px;
+        filter: blur(0px);
+    }
+}
+
+.anim-apparition-heart {
+    animation: anim-apparition-heart .8s ease-in, 5s anim-heartbeat 5s ease-in infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim-eye-apparition {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.anim-eye-apparition-1 {
+    animation: anim-eye-apparition .5s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.anim-eye-apparition-2 {
+    animation: anim-eye-apparition .5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+
+.anim-eye-apparition-3 {
+    animation: anim-eye-apparition .5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+
+.anim-eye-apparition-4 {
+    animation: anim-eye-apparition .5s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+}
+
+/* AFTER APPARITION */
 @keyframes anim-rotating {
     from {
         transform: rotate(0deg);
@@ -599,7 +756,7 @@ section{
 }
 
 .anim-rotating {
-    animation: anim-rotating 120s linear infinite;
+    animation: anim-apparition .8s ease-in, anim-rotating 120s linear infinite;
 }
 
 @keyframes anim-silhouette-inner-blink {

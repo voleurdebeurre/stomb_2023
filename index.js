@@ -9,12 +9,12 @@ function eyeball(e) {
     });
 }
 
+
+let allSections= document.querySelectorAll("section")
 function openNavTarget(target){
-    let allSections= document.querySelectorAll("section")
     let sectionToggle = document.querySelector("section[data-sectiontarget='" + target +"']")
     allSections.forEach(section => {
         section.classList.remove("sectionShow")
-        sectionToggle.classList.add("sectionShow")
     })
-    
+    sectionToggle.classList.toggle("sectionShow")
 }

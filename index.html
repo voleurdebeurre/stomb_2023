@@ -15,12 +15,12 @@
             </a>
     
             <ul class="main-nav">
-                <li><a href="#" onClick="javascript: openNavTarget('shows');">SHOWS</a></li>
-                <li><a href="#" onClick="javascript: openNavTarget('music');">MUSIC</a></li>
-                <li><a href="#" onClick="javascript: openNavTarget('video');">VIDEO</a></li>
-                <li><a href="#" onClick="javascript: openNavTarget('merch');">MERCH</a></li>
-                <li><a href="#" onClick="javascript: openNavTarget('press');">PRESS</a></li>
-                <li><a href="#" onClick="javascript: openNavTarget('contact');">CONTACT</a></li>
+                <li><button onClick="javascript: openNavTarget('shows');">SHOWS</button></li>
+                <li><button onClick="javascript: openNavTarget('music');">MUSIC</button></li>
+                <li><button onClick="javascript: openNavTarget('video');">VIDEO</button></li>
+                <li><button onClick="javascript: openNavTarget('merch');">MERCH</button></li>
+                <li><button onClick="javascript: openNavTarget('press');">PRESS</button></li>
+                <li><button onClick="javascript: openNavTarget('contact');">CONTACT</button></li>
             </ul>
         </nav>
         <div class="hero">
@@ -104,13 +104,13 @@
             </div>
         </div>
         <main>
-            <section class="shows" data-sectiontarget="shows">
+            <section class="shows" data-sectiontarget="shows" loading="lazy">
                 <div class="shows-container">
                     <h2>UPCOMING SHOWS</h2>
                     <div class="shows-year">
                         <h3>2023</h3>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -127,7 +127,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -144,7 +144,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -161,7 +161,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -178,7 +178,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -199,7 +199,7 @@
                     <div class="shows-year">
                         <h3>2022</h3>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -216,7 +216,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -233,7 +233,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -250,7 +250,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -267,7 +267,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -284,7 +284,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -301,7 +301,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -318,7 +318,7 @@
                             <a href="#">Tickets</a>
                         </div>
                     </div>
-                    <div class="show">
+                    <div class="show" loading="lazy">
                         <div class="show-date">
                             <p class="show-day">06</p>
                             <p class="show-month">JAN</p>
@@ -337,150 +337,154 @@
                     </div>
                 </div>
             </section>
-            <section class="music" data-sectiontarget="music">
-                <div class="line-left"></div>
-                <div class="albums">
-                    <div class="album">
-                        <div class="album-year">
-                            <h4>2023</h4>
-                            <h5>Massive disturbed meta art</h5>
-                        </div>
-                        <div class="album-playlist">
-                            <p>COMING SOON</p>
-                        </div>
-                    </div>
-                    <div class="album">
-                        <div class="album-wrapper">
+            <section class="music" data-sectiontarget="music" loading="lazy">
+                <h2>DISCOGRAPHY</h2>
+                <div class="discography">
+                    <div class="line-left"></div>
+                    <div class="albums">
+                        <div class="album" loading="lazy">
                             <div class="album-year">
-                                <h4>2020</h4>
-                                <h5>From Nihil</h5>
+                                <h4>2023</h4>
+                                <h5>Massive disturbed meta art</h5>
+                            </div>
+                            <div class="album-playlist">
+                                <p>COMING SOON</p>
+                            </div>
+                        </div>
+                        <div class="album" loading="lazy">
+                            <div class="album-wrapper">
+                                <div class="album-year">
+                                    <h4>2020</h4>
+                                    <h5>From Nihil</h5>
+                                </div>
+                                <div class="album-playlist">
+                                    <p>
+                                        O builders of temples made of dust<br>
+                                        Watering the land with tears and blood<br>
+                                        You, who have raised your ephemeral existence<br>
+                                        Above every other else's…<br>
+                                    </p>
+                                    <p>
+                                        O worshippers of cinder-tasting icons<br>
+                                        Enthralled by a mystified destiny<br>
+                                        You, who have deemed that every single thing in the world<br>
+                                        Was a mere present thrown at your feet…<br>
+                                    </p>
+                                    <p>
+                                        Haul your fingers from this chaos spawn treasures<br>
+                                        And prepare to embrace the void…<br>
+                                    </p>
+                                    <p>
+                                        O insignificant creatures<br>
+                                        Now has come the time for you to give way…<br>
+                                        For absolute fate<br>
+                                        Was never the question…<br>
+                                    </p>
+                                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4Ixf5xHb9iJUEXeIAU85yj?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                    <p class="album-credits">
+                                        Artwork by Sylvie Gedda<br>
+                                        <a href="https://www.art-gedda.com/">https://www.art-gedda.com/</a><br>
+                                        Mixed by Tom Gadonna at Axone Studio<br>
+                                        <a href="https://www.facebook.com/AxoneStudio/">https://www.facebook.com/AxoneStudio/</a><br>
+                                        Mastered by Pierrick Noel at Atelier Mastering<br>
+                                        <a href="https://www.facebook.com/ateliermastering/">https://www.facebook.com/ateliermastering/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album" loading="lazy">
+                            <div class="album-year">
+                                <h4>2017</h4>
+                                <h5>EP Duality</h5>
                             </div>
                             <div class="album-playlist">
                                 <p>
-                                    O builders of temples made of dust<br>
-                                    Watering the land with tears and blood<br>
-                                    You, who have raised your ephemeral existence<br>
-                                    Above every other else's…<br>
+                                    Here he comes<br>
+                                    He rises again within the depths of my entrails… jaws of iron<br>
+                                    I can feel him, he knows it<br>
+                                    He is what i am<br>
+                                    My soul, my body, my heart, everything belongs to him<br>
                                 </p>
                                 <p>
-                                    O worshippers of cinder-tasting icons<br>
-                                    Enthralled by a mystified destiny<br>
-                                    You, who have deemed that every single thing in the world<br>
-                                    Was a mere present thrown at your feet…<br>
+                                    They dance before us… rag dolls<br>
+                                    He knows it, they can feel him<br>
+                                    I am what he is<br>
+                                    And our gestures draw the outlines of their lives, everything belongs to him<br>
                                 </p>
                                 <p>
-                                    Haul your fingers from this chaos spawn treasures<br>
-                                    And prepare to embrace the void…<br>
+                                    My mind expends and implodes… bubbles of cotton<br>
+                                    I know it, he can feel it<br>
+                                    I want to be what he is<br>
+                                    And our voices tune up to silence theirs, everything belongs to him<br>
                                 </p>
                                 <p>
-                                    O insignificant creatures<br>
-                                    Now has come the time for you to give way…<br>
-                                    For absolute fate<br>
-                                    Was never the question…<br>
+                                    This vision is so wonderful… waterfall of salt<br>
+                                    You know it, you can feel it<br>
+                                    You are what we are<br>
+                                    And our flesh unites theirs, everything belongs to us<br>
                                 </p>
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4Ixf5xHb9iJUEXeIAU85yj?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                <p>
+                                    The journey is almost over… carousel of dust<br>
+                                    You know it, everything can be felt<br>
+                                    They are what they are<br>
+                                    Their lives and feelings are nothing but an illusion, everything belongs to us<br>
+                                </p>
+                                <p>
+                                    The night is brighter and brighter… temple of granite<br>
+                                    We knew it, everything has grown silent<br>
+                                    I am alone and you are gone<br>
+                                    Your soul, your body, your heart… from now on, everything belongs to me
+                                </p>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0PwuAHfk2VtOegTYFRnChR?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                                 <p class="album-credits">
-                                    Artwork by Sylvie Gedda<br>
-                                    <a href="https://www.art-gedda.com/">https://www.art-gedda.com/</a><br>
-                                    Mixed by Tom Gadonna at Axone Studio<br>
-                                    <a href="https://www.facebook.com/AxoneStudio/">https://www.facebook.com/AxoneStudio/</a><br>
-                                    Mastered by Pierrick Noel at Atelier Mastering<br>
-                                    <a href="https://www.facebook.com/ateliermastering/">https://www.facebook.com/ateliermastering/</a>
+                                    Artwork by Jérôme Oudot Trëz<br>
+                                    <a href="https://www.jerome-oudot-trez.com/">https://www.jerome-oudot-trez.com/</a><br>
+                                    Mixed by Andrew Guillotin at Hybreed Studio<br>
+                                    <a href="http://www.hybreedstudios.fr/">http://www.hybreedstudios.fr/</a><br>
+                                    Mastered by Acle Kahney at 4DSounds<br>
+                                    <a href="http://www.4dsounds.com/">http://www.4dsounds.com/</a>
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="album">
-                        <div class="album-year">
-                            <h4>2017</h4>
-                            <h5>EP Duality</h5>
+                        <div class="album" loading="lazy">
+                            <div class="album-year">
+                                <h4>2015</h4>
+                                <h5>The Grey</h5>
+                            </div>
+                            <div class="album-playlist">
+                                <p>
+                                    Can you hear the sound of the world?<br>
+                                    This ephemeral echo that slowly burns through the void…<br>
+                                    Can you see beyond the veil?<br>
+                                    This overwhelming presence that enhances the truthfulness of any reality…<br>
+                                    And then…<br>
+                                    When everything has fade away and the world is silent…<br>
+                                    All there will be left is silence…<br>
+                                    And the grey<br>
+                                </p>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6GwfB0kHkbEd4sOWCBLKB8?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                                <p class="album-credits">
+                                    Artwork by Hicham Haddaji (Strychneen Studio)<br>
+                                    <a href="https://www.facebook.com/strychneenstudio/">https://www.facebook.com/strychneenstudio/</a><br>
+                                    Mixed by Andrew Guillotin at Hybreed Studio<br>
+                                    <a href="http://www.hybreedstudios.fr/">http://www.hybreedstudios.fr/</a><br>
+                                    Mastered by Acle Kahney at 4DSounds<br>
+                                    <a href="http://www.4dsounds.com/">http://www.4dsounds.com/</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="album-playlist">
-                            <p>
-                                Here he comes<br>
-                                He rises again within the depths of my entrails… jaws of iron<br>
-                                I can feel him, he knows it<br>
-                                He is what i am<br>
-                                My soul, my body, my heart, everything belongs to him<br>
-                            </p>
-                            <p>
-                                They dance before us… rag dolls<br>
-                                He knows it, they can feel him<br>
-                                I am what he is<br>
-                                And our gestures draw the outlines of their lives, everything belongs to him<br>
-                            </p>
-                            <p>
-                                My mind expends and implodes… bubbles of cotton<br>
-                                I know it, he can feel it<br>
-                                I want to be what he is<br>
-                                And our voices tune up to silence theirs, everything belongs to him<br>
-                            </p>
-                            <p>
-                                This vision is so wonderful… waterfall of salt<br>
-                                You know it, you can feel it<br>
-                                You are what we are<br>
-                                And our flesh unites theirs, everything belongs to us<br>
-                            </p>
-                            <p>
-                                The journey is almost over… carousel of dust<br>
-                                You know it, everything can be felt<br>
-                                They are what they are<br>
-                                Their lives and feelings are nothing but an illusion, everything belongs to us<br>
-                            </p>
-                            <p>
-                                The night is brighter and brighter… temple of granite<br>
-                                We knew it, everything has grown silent<br>
-                                I am alone and you are gone<br>
-                                Your soul, your body, your heart… from now on, everything belongs to me
-                            </p>
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0PwuAHfk2VtOegTYFRnChR?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                            <p class="album-credits">
-                                Artwork by Jérôme Oudot Trëz<br>
-                                <a href="https://www.jerome-oudot-trez.com/">https://www.jerome-oudot-trez.com/</a><br>
-                                Mixed by Andrew Guillotin at Hybreed Studio<br>
-                                <a href="http://www.hybreedstudios.fr/">http://www.hybreedstudios.fr/</a><br>
-                                Mastered by Acle Kahney at 4DSounds<br>
-                                <a href="http://www.4dsounds.com/">http://www.4dsounds.com/</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="album">
-                        <div class="album-year">
-                            <h4>2015</h4>
-                            <h5>The Grey</h5>
-                        </div>
-                        <div class="album-playlist">
-                            <p>
-                                Can you hear the sound of the world?<br>
-                                This ephemeral echo that slowly burns through the void…<br>
-                                Can you see beyond the veil?<br>
-                                This overwhelming presence that enhances the truthfulness of any reality…<br>
-                                And then…<br>
-                                When everything has fade away and the world is silent…<br>
-                                All there will be left is silence…<br>
-                                And the grey<br>
-                            </p>
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6GwfB0kHkbEd4sOWCBLKB8?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                            <p class="album-credits">
-                                Artwork by Hicham Haddaji (Strychneen Studio)<br>
-                                <a href="https://www.facebook.com/strychneenstudio/">https://www.facebook.com/strychneenstudio/</a><br>
-                                Mixed by Andrew Guillotin at Hybreed Studio<br>
-                                <a href="http://www.hybreedstudios.fr/">http://www.hybreedstudios.fr/</a><br>
-                                Mastered by Acle Kahney at 4DSounds<br>
-                                <a href="http://www.4dsounds.com/">http://www.4dsounds.com/</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="album">
-                        <div class="album-year">
-                            <h4>2013</h4>
-                            <h5>EP Fragment</h5>
-                        </div>
-                        <div class="album-playlist">
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6b3lUbOOXTX6NjkHPHEKDV?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <div class="album" loading="lazy">
+                            <div class="album-year">
+                                <h4>2013</h4>
+                                <h5>EP Fragment</h5>
+                            </div>
+                            <div class="album-playlist">
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6b3lUbOOXTX6NjkHPHEKDV?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
             </section>
         </main>
         <script src="index.js"></script>

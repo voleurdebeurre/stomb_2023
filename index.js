@@ -15,6 +15,8 @@ function openNavTarget(target){
     let sectionToggle = document.querySelector("section[data-sectiontarget='" + target +"']")
     allSections.forEach(section => {
         section.classList.remove("sectionShow")
+        sectionToggle.classList.remove("animate__slideInDown")
     })
     sectionToggle.classList.toggle("sectionShow")
+    sectionToggle.classList.toggle("animate__slideInDown")
 }

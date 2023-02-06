@@ -1,3 +1,9 @@
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* GENERAL */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
 :root{
     --color-black: #000000;
     --color-acidgreen: #6ed34a;
@@ -117,13 +123,28 @@ h3{
     color: var(--color-acidgreen);
 }
 
-.hero{
+button{
+    cursor: pointer;
+}
+
+section{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 86px 0;
+    overflow-y: auto;
+    z-index: 2;
 }
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* NAV */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
 nav{
     position: fixed;
@@ -132,9 +153,18 @@ nav{
     z-index: 3;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-block: 1rem;
     width: 100%;
     background: black;
+}
+
+.nav-logo{
+    display: none;
+    color: white;
+    font-family: "Mada", sans-serif;
+    font-weight: 500;
+    margin-right: auto;
 }
 
 .stomb-logo{
@@ -162,7 +192,6 @@ nav{
     color: white;
     font-size: 1rem;
     letter-spacing: 6px;
-    cursor: pointer;
     padding-block: 1rem;
 }
 
@@ -178,6 +207,20 @@ nav{
     animation: anim-navHover linear infinite;
     animation-duration: 5s;
     opacity: .5;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* HERO SCREEN - HOME */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .album-release{
@@ -248,18 +291,11 @@ nav{
     stroke-width: 2px;
 }
 
-section{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    width: 100%;
-    height: 100vh;
-    padding: 86px 0;
-    overflow-y: auto;
-    z-index: 2;
-}
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* SHOWS SECTION */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
 .shows-container{
     width: 768px;
@@ -342,6 +378,12 @@ section{
     color: black;
     transition: all .5s ease-in;
 }
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* MUSIC SECTION */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
 .music{
     width: 100%;
@@ -429,6 +471,48 @@ section{
 
 .album-playlist .album-credits a:hover{
     color: var(--color-purple);
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* VIDEO SECTION */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+
+.videos{
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0 0 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.videos-container{
+    width: 80%;
+    margin: 4rem auto 0 auto;
+}
+
+.video-spotlight{
+    width: 100%;
+}
+
+.video-spotlight iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.allvideos{
+    width: 80%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto 0 auto;
+}
+
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 /* ---------------------------------------- */
@@ -638,9 +722,69 @@ section{
     transform-origin: -15px 150px;
 }
 
-/* ---------------------------- */
-/* ANIMS */
-/* ---------------------------- */
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* MOBILE VERSIONS */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+    .nav-logo{
+        display: flex;
+        z-index: 2;
+    }
+
+    .stomb-logo{
+        width: 200px;
+        z-index: 2;
+    }
+
+    .main-nav{
+        display: none;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        padding: 0 0 0 3rem;
+    }
+
+    .nav-show{
+        display: flex;
+    }
+
+    .hero{
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .art-container{
+        scale: .5;
+        margin: -5rem 0 0 0;
+    }
+
+    .album-release{
+        margin-top: -10rem;
+    }
+
+    .album-release h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+}
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ANIMATIONS */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
 
 /* NAV HOVER */
 @keyframes anim-navHover {

@@ -10,10 +10,14 @@
     </head>
     <body>
         <nav>
+            <button onClick="javascript: mobileNavController();" class="nav-logo">
+                <img src="./images/menu-mol.svg" alt="Open nav">
+                MENU
+            </button>
             <a href="" class="stomb-logo">
                 <img src="./images/stomb-logo.png" alt="STOMB OFFICIAL">
             </a>
-    
+
             <ul class="main-nav">
                 <li><button onClick="javascript: openNavTarget('shows');">SHOWS</button></li>
                 <li><button onClick="javascript: openNavTarget('music');">MUSIC</button></li>
@@ -484,7 +488,33 @@
                         </div>
                     </div>
                 </div>
-                
+            </section>
+            <section class="videos" data-sectiontarget="video" loading="lazy">
+                <h2>VIDEOS</h2>
+                <div class="videos-container">
+                    <div class="video-spotlight">
+                        <div class="video-player">
+                            <iframe src="https://www.youtube.com/embed/5BYemLvD8DQ?showinfo=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen ></iframe>
+                        </div>
+                    </div>
+                    <div class="allvideos">
+                        <div class="video">
+                            <div class="video-player">
+                                <iframe src="https://www.youtube.com/embed/RDC0w5qHvMc?showinfo=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <div class="video-player">
+                                <iframe src="https://www.youtube.com/embed/oi6rL0LSUak?showinfo=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <div class="video-player">
+                                <iframe src="https://www.youtube.com/embed/ffke3_TS7JI?showinfo=0&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <script src="index.js"></script>

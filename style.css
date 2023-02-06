@@ -127,6 +127,11 @@ button{
     cursor: pointer;
 }
 
+main{
+    width: 100%;
+    height: 100vh;
+}
+
 section{
     display: none;
     position: absolute;
@@ -730,6 +735,7 @@ nav{
 /* ---------------------------------------- */
 
 @media screen and (max-width: 1024px) {
+
     .nav-logo{
         display: flex;
         z-index: 2;
@@ -773,7 +779,48 @@ nav{
     .album-release h2{
         text-align: center;
     }
+
+    .music{
+        padding: 10rem 0 0 0;
+    }
+
+    .line-left{
+        z-index: -1;
+    }
+
+    .album{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .album-year{
+        position: relative;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .album-year h4, .album-year h5{
+        text-align: center;
+        background-color: black;
+    }
+
+    .album-playlist{
+        width: 100%;
+        background-color: black;
+        padding: 0 1rem;
+    }
+
+    .videos-container{
+        width: 90%;
+    }
+
+    .allvideos{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 }
+
 
 @media screen and (max-width: 540px) {
     

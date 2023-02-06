@@ -11,8 +11,13 @@ function eyeball(e) {
 
 
 let allSections = document.querySelectorAll("section")
+let mainNavContainer = document.querySelector(".main-nav")
+let bodyTag = document.querySelector("body")
 
 function openNavTarget(target){
+    mainNavContainer.classList.toggle("nav-show")
+    mainNavContainer.classList.toggle("animate__slideInDown")
+    bodyTag.style.overflow = "none"
     let sectionToggle = document.querySelector("section[data-sectiontarget='" + target +"']")
     allSections.forEach(section => {
         section.classList.remove("sectionShow")
@@ -26,7 +31,7 @@ function openNavTarget(target){
 }
 
 function mobileNavController(){
-    let mainNavContainer = document.querySelector(".main-nav")
+    bodyTag.style.overflow = "none"
     mainNavContainer.classList.toggle("nav-show")
     mainNavContainer.classList.toggle("animate__slideInDown")
 }
